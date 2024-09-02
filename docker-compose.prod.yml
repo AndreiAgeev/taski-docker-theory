@@ -12,7 +12,7 @@ services:
       - pg_data_prod:/var/lib/postgresql/data
 
   backend:
-    image: andreiageev/taski_backend:postgresql
+    image: andreiageev/taski_backend
     env_file: .env
     depends_on:
       - db
